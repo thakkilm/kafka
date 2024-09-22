@@ -1,13 +1,13 @@
-package com.mahesh.kafka_producer;
+package kafka_demo.demo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class KafkaProducerApplication {
+public class KafkaDemoApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(KafkaProducerApplication.class, args);
+		SpringApplication.run(KafkaDemoApplication.class, args);
 	}
 
 }
