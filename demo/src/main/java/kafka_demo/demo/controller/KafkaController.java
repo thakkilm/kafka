@@ -17,7 +17,10 @@ public class KafkaController {
     public ResponseEntity<?> publishMessage(@PathVariable String message){
 
         try{
-            kafkaMessagePublisher.sendMessage(message);
+            for(int i=0;i<10000;i++){
+                kafkaMessagePublisher.sendMessage("User "+i);
+            }
+
             return ResponseEntity.ok("Message published successfully");
         }
         catch (Exception e){
